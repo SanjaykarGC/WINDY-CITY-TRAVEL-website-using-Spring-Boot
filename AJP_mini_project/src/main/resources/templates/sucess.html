@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-image: url(i26.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+            table
+            {
+                margin-left: 500px;
+                margin-top: 0px;
+            }
+            .he
+            {
+                margin-top: 50px;
+                font-family: serif;
+                font-size: 30;
+                color: rgb(219, 21, 130);
+            }
+        </style>
+    </head>
+    <body>
+       <div class="he"><center>Registration Successfull</center></div> 
+        <table class="table table-bordered">
+                <tr class="table-success">
+                    <td>Name:</td>
+                    <td><span th:text="${frm.name}"></span></td>
+                </tr> <br>
+                <tr>
+                    <td>Email:</td>
+                    <td><span th:text="${frm.emailid}"></span></td><br>
+                </tr>
+                <tr>
+                    <td>Phone number:</td>
+                    <td><span th:text="${frm.phoneno}"></span></td><br>
+                </tr>
+                <tr> 
+                    <td>Age:</td>
+                    <td><span th:text="${frm.age}"></span></td> <br>
+                </tr>
+                <tr> 
+                    <td>Gender:</td>
+                    <td><span th:text="${frm.radio1}"></span></td> <br>
+                </tr>
+                
+        </table> 
+    </body>
+</html>
